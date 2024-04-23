@@ -3,11 +3,14 @@
 using namespace std;
 
 
+/// @brief  Function to the return of auto keyword
+/// @return void pointer
 auto pvfunction()  { void *ptr; return ptr;  }
 
 
 int main()
 {
+    /* Declare and initialize a several auto variables */
 
     auto autoBuffer0 = 'a';
     auto autoBuffer1 = 2147483647;
@@ -19,6 +22,9 @@ int main()
     auto autoBuffer7 = pvfunction();
     inline void autoBuffer8(void);
 
+
+    /* Print the size and type of each auto variable */
+
     cout << "auto Buffer 0 size:  " << sizeof(autoBuffer0) << ",  Its Type: " << typeid(autoBuffer0).name() << endl;
     cout << "auto Buffer 1 size:  " << sizeof(autoBuffer1) << ",  Its Type: " << typeid(autoBuffer1).name() << endl;
     cout << "auto Buffer 2 size:  " << sizeof(autoBuffer2) << ",  Its Type: " << typeid(autoBuffer2).name() << endl;
@@ -29,5 +35,6 @@ int main()
     cout << "auto Buffer 7 size:  " << sizeof(autoBuffer7) << ",  Its Type: " << typeid(autoBuffer7).name() << endl;
     cout << "auto Buffer 8 size:  1"                       << ",  Its Type: " << typeid(autoBuffer8).name() << endl;
     cout                                                                                                    << endl;
-    
+
+    return 0;
 }
