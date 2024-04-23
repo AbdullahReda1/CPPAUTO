@@ -14,7 +14,7 @@ This repository contains a simple C++ code example demonstrating the usage of th
 
 ## Code Description
 
-1.**cppauto.cpp**: This file contains the main code demonstrating the usage of the `auto` keyword.
+1. **cppauto.cpp**: This file contains the main code demonstrating the usage of the `auto` keyword.
 2. The `main` function initializes several variables using the `auto` keyword, each with different types.
 3. The variables are named `autoBuffer0` through `autoBuffer7`, and their values are initialized with various literals and function calls.
 4. The `pvfunction` function is declared to return a `void` pointer and is used to initialize `autoBuffer7`.
